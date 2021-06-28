@@ -57,7 +57,3 @@ sub_recon
 echo "${red}${bold}Script Execution Completed${reset}"
 echo "${blue}${bold}Total ${red}${bold} ${count} ${reset}${blue}${bold} subdomains found.${reset}"
 #fi
-
-
-
-
