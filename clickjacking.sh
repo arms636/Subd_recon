@@ -22,7 +22,7 @@ mkdir clickjacking
 Click_jack()
 {
 echo "
-		<html>
+        <html>
         <head>
         <title>Clickjack test page</title>
         </head>
