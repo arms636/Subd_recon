@@ -19,6 +19,12 @@ go get -u github.com/tomnomnom/assetfinder
 ```
 $ git clone https://github.com/arms636/Subd_recon.git
 $ cd Subd_recon
-$ chmod 755 subd_recon
-$ ./subd_recon
+$ chmod 755 subd_recon.sh
+$ ./subd_recon.sh
+```
+# To Chech click_jacking vulnerability
+```
+$ cd Subd_recon
+$ chmod 755 clickjacking.sh
+$ ./clickjacking.sh
 ```
