@@ -5,6 +5,7 @@ This tool is created as a part of learning shell scripting, now I am making vari
 - can collect subdomains of a website
 - can test alive subdomains
 - can sort out these subdomains
+- can check for clickjacking vulnerability
 
 # Requirements
 Follow the installtion steps
@@ -22,7 +23,7 @@ $ cd Subd_recon
 $ chmod 755 subd_recon.sh
 $ ./subd_recon.sh
 ```
-# To Chech click_jacking vulnerability
+# To Chech Clickjacking vulnerability
 ```
 $ cd Subd_recon
 $ chmod 755 clickjacking.sh
