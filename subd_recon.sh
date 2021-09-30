@@ -33,6 +33,10 @@ echo "${blue}${bold}Subdomains of $dom is Loading${reset}.............."
 assetfinder -subs-only $dom > $dom/subd.txt
 echo "${blue}${bold}Completed${reset}"
 
+while read LINE; do
+  curl -o /dev/null --silent --head --write-out "%{http_code} $LINE\n" "$LINE"
+done < $dom/subd.txt
+
 echo "${blue}${bold}Live Subdomains of $dom is Loading${reset}..............."
 cat $dom/subd.txt | httprobe > $dom/alive.txt
 echo "${blue}${bold}Completed${reset}"
