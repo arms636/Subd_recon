@@ -18,7 +18,7 @@ echo -e "${red}${bold}Welcome $USER! Today is $day.\nYou are using $SHELL shell 
 }
 dom=$1
 read -p  "${red}${bold}Enter a domain : ${reset}" dom
-# mkdir dom
+# mkdir for dom
 Directory()
 {
 mkdir "$dom"
@@ -34,7 +34,7 @@ assetfinder -subs-only $dom > $dom/subd.txt
 echo "${blue}${bold}Completed${reset}"
 
 while read LINE; do
-  curl -o /dev/null --silent --head --write-out "%{http_code} $LINE\n" "$LINE"
+  curl -o /dev/null -siw "%{url_effective}: %{http_code}\n" "$LINE"
 done < $dom/subd.txt
 
 echo "${blue}${bold}Live Subdomains of $dom is Loading${reset}..............."
